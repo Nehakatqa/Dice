@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="126" started-at="2018-06-26T08:00:54Z" finished-at="2018-06-26T08:00:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="126" started-at="2018-06-26T08:00:54Z" finished-at="2018-06-26T08:00:54Z">
+      <class name="com.qainfotech.tap.training.snl.api.AppTest">
+        <test-method status="PASS" signature="initialise()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="initialise" is-config="true" duration-ms="34" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialise -->
+        <test-method status="FAIL" signature="check_game_in_progress()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="check_game_in_progress" duration-ms="6" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONArray[0] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONArray[0] not found.
+	at org.json.JSONArray.get(JSONArray.java:201)
+	at org.json.JSONArray.getJSONObject(JSONArray.java:364)
+	at com.qainfotech.tap.training.snl.api.Board.rollDice(Board.java:131)
+	at com.qainfotech.tap.training.snl.api.AppTest.check_game_in_progress(AppTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_game_in_progress -->
+        <test-method status="PASS" signature="check_samename_player_exists()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="check_samename_player_exists" duration-ms="18" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <exception class="com.qainfotech.tap.training.snl.api.PlayerExistsException">
+            <message>
+              <![CDATA[Player 'Neha' already exists on board]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.qainfotech.tap.training.snl.api.PlayerExistsException: Player 'Neha' already exists on board
+	at com.qainfotech.tap.training.snl.api.Board.registerPlayer(Board.java:73)
+	at com.qainfotech.tap.training.snl.api.AppTest.check_samename_player_exists(AppTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.qainfotech.tap.training.snl.api.PlayerExistsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_samename_player_exists -->
+        <test-method status="PASS" signature="check_turn_is_invalid()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="check_turn_is_invalid" duration-ms="2" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <exception class="com.qainfotech.tap.training.snl.api.InvalidTurnException">
+            <message>
+              <![CDATA[Player 'ad42064b-ee59-4293-ba60-c568d6175ef6' does not have the turn]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.qainfotech.tap.training.snl.api.InvalidTurnException: Player 'ad42064b-ee59-4293-ba60-c568d6175ef6' does not have the turn
+	at com.qainfotech.tap.training.snl.api.Board.rollDice(Board.java:165)
+	at com.qainfotech.tap.training.snl.api.AppTest.check_turn_is_invalid(AppTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.qainfotech.tap.training.snl.api.InvalidTurnException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_turn_is_invalid -->
+        <test-method status="PASS" signature="delete_player_incorrect_uid()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="delete_player_incorrect_uid" duration-ms="8" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <exception class="com.qainfotech.tap.training.snl.api.NoUserWithSuchUUIDException">
+            <message>
+              <![CDATA[No Player with uuid '48632cb5-4683-4d61-a4c1-7ba1c1dcf88d' on board]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.qainfotech.tap.training.snl.api.NoUserWithSuchUUIDException: No Player with uuid '48632cb5-4683-4d61-a4c1-7ba1c1dcf88d' on board
+	at com.qainfotech.tap.training.snl.api.Board.deletePlayer(Board.java:111)
+	at com.qainfotech.tap.training.snl.api.AppTest.delete_player_incorrect_uid(AppTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.qainfotech.tap.training.snl.api.NoUserWithSuchUUIDException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_player_incorrect_uid -->
+        <test-method status="PASS" signature="max_player()[pri:0, instance:com.qainfotech.tap.training.snl.api.AppTest@20e2cbe0]" name="max_player" duration-ms="15" started-at="2018-06-26T13:30:54Z" finished-at="2018-06-26T13:30:54Z">
+          <exception class="com.qainfotech.tap.training.snl.api.MaxPlayersReachedExeption">
+            <message>
+              <![CDATA[The board already has maximum allowed Player: 4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.qainfotech.tap.training.snl.api.MaxPlayersReachedExeption: The board already has maximum allowed Player: 4
+	at com.qainfotech.tap.training.snl.api.Board.registerPlayer(Board.java:68)
+	at com.qainfotech.tap.training.snl.api.AppTest.max_player(AppTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.qainfotech.tap.training.snl.api.MaxPlayersReachedExeption -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- max_player -->
+      </class> <!-- com.qainfotech.tap.training.snl.api.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
